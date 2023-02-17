@@ -5,7 +5,7 @@ provider "aws" {
 data "aws_availability_zones" "available" {}
 
 module "vpc" {
-  source  = "terraform-aws-modules/vpc/aws"
+  source  = "https://github.com/cvanballegooijen/terraform-aws-modules/vpc/aws"
   version = "2.77.0"
 
   name                 = "education"
